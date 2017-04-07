@@ -9,12 +9,14 @@ input[type=search] {
     text-align: center;
     background-color: white;
     /*background-image: url('searchicon.png');
-    background-position: 10px 10px; 
+    background-position: 10px 10px;
     background-repeat: no-repeat;*/
     padding: 12px 20px 12px 20px;
     margin-top: 50%;
-    -webkit-transition: width 0.4s ease-in-out, margin-top 0.4s ease-in-out;
     transition: width 0.4s ease-in-out, margin-top 0.4s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out, margin-top 0.4s ease-in-out;
+    -moz-transition: width 0.4s ease-in-out, margin-top 0.4s ease-in-out;
+    -o-transition: width 0.4s ease-in-out, margin-top 0.4s ease-in-out;
 }
 
 
@@ -49,11 +51,47 @@ li {
     list-style-position:inside;
     border: 2px solid #ccc;
     flex-wrap: wrap;
-    -webkit-transition: background-color 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -moz-transition: background-color 0.2s ease-in-out;
+    -o-transition: background-color 0.2s ease-in-out;
 }
 
 li:hover {
     border-color: #e1c897;
     background-color: #eee
+}
+
+img {
+    animation: fadein 0.4s;
+    -moz-animation: fadein 0.4s;
+    -webkit-animation: fadein 0.4s;
+    -o-animation: fadein 0.4s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein {
+    /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein {
+    /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
