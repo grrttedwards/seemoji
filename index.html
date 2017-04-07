@@ -2,11 +2,13 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="styles.css">
+<script src="scripts.js"></script>
 </head>
 <body>
 
-    <form>
-    <input  type="text" name="search" placeholder="" required>
+    <form onkeydown="handleKeypress(this)">
+    <input type="search" name="search" placeholder="" required />
+    <input type="text" style="display: none;" />
     </form>
     <div>
         <ul>

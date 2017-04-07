@@ -1,4 +1,4 @@
-input[type=text] {
+input[type=search] {
     margin: 0 auto;
     width: 50%;
     display: block;
@@ -18,12 +18,12 @@ input[type=text] {
 }
 
 
-input[type=text]:focus {
+input[type=search]:focus {
     width: 75%;
     margin-top: 10%;
 }
 
-input[type=text]:valid {
+input[type=search]:valid {
     width: 75%;
     margin-top: 10%;
 }
